@@ -8,20 +8,20 @@ void run_all_tests() {
     // Test 1: n = 0
     auto result1 = fib(0);
     assert(result1.empty());
-    std::cout << "? Test 1 passed: n=0\n";
+    std::cout << " Test 1 passed: n=0\n";
 
     // Test 2: n = 1
     auto result2 = fib(1);
     assert(result2.size() == 1);
     assert(result2[0] == 0);
-    std::cout << "? Test 2 passed: n=1\n";
+    std::cout << " Test 2 passed: n=1\n";
 
     // Test 3: n = 2
     auto result3 = fib(2);
     assert(result3.size() == 2);
     assert(result3[0] == 0);
     assert(result3[1] == 1);
-    std::cout << "? Test 3 passed: n=2\n";
+    std::cout << " Test 3 passed: n=2\n";
 
     // Test 4: n = 10
     auto result4 = fib(10);
@@ -36,7 +36,7 @@ void run_all_tests() {
     assert(result4[7] == 13);
     assert(result4[8] == 21);
     assert(result4[9] == 34);
-    std::cout << "? Test 4 passed: n=10\n";
+    std::cout << " Test 4 passed: n=10\n";
 
     // Test 5: overflow check
     try {
@@ -44,13 +44,14 @@ void run_all_tests() {
         assert(false && "Should have thrown exception");
     }
     catch (const std::exception& e) {
-        std::cout << "? Test 5 passed: overflow exception caught\n";
+        std::cout << " Test 5 passed: overflow exception caught\n";
     }
 
-    std::cout << "?? All tests passed!\n";
+    std::cout << " All tests passed!\n";
 }
 
 int main() {
     run_all_tests();
     return 0;
 }
+
